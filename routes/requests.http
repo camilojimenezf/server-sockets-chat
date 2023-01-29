@@ -1,0 +1,27 @@
+### Create user
+POST http://localhost:3000/api/login/new
+content-type: application/json
+
+{
+  "nombre": "camilo2",
+  "email": "camilo2@gmail.com",
+  "password": "123123"
+}
+
+### Login user
+POST http://localhost:3000/api/login
+content-type: application/json
+
+{
+  "email": "camilo2@gmail.com",
+  "password": "123123"
+}
+
+### Renew token
+GET http://localhost:3000/api/login/renew
+content-type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2Q2ZGE3ODdiOWNmYjg5YzA5NWRlMWYiLCJpYXQiOjE2NzUwMjYwNjIsImV4cCI6MTY3NTExMjQ2Mn0.eT5lDB8wFm7H4c6xtV432w5AwXojLOpupkGVwhP52Z8 
+
+{
+
+}
